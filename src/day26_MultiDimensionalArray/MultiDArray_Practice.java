@@ -1,0 +1,77 @@
+package day26_MultiDimensionalArray;
+
+import java.sql.SQLOutput;
+import java.util.Arrays;
+
+public class MultiDArray_Practice {
+    /*
+    Tester:{"Liliia","Odina","Cristina","Elkem" }
+    Dev:{"Ahmet","Erfan","Roza","Sarah"}
+    SM:{"Nurmamet"}
+    PO:{"Nadir"}
+    BA:{"Alex"}
+
+    scrum Team: testers,Developer,SM,PO,BA
+     */
+    public static void main(String[] args) {
+
+        String[]testers={"Liliia","Odina","Cristina","Elkem" };
+        String[]developers={"Ahmet","Erfan","Roza","Sarah"};
+        String[]SM={"Nurmamet"};
+        String[]PO={"Nadir"};
+        String[]BA={"Alex"};
+
+
+        String []testers2={"Irene","Aslan","Nazar"};
+        String[][]scrumTeam={testers, developers, SM, PO, BA};
+//                              0         1         2  3  4
+
+        System.out.println(Arrays.deepToString(scrumTeam));
+
+        scrumTeam[4][0]="Adam"; // hired Adam instead of Alex
+        scrumTeam[1][2]="Emine";
+        scrumTeam[0]=testers2;
+        scrumTeam[3][0]="Zeki";
+
+
+        System.out.println(Arrays.deepToString(scrumTeam));
+        System.out.println("====================================");
+        for(String[] each :scrumTeam){
+            for(String name:each){
+                System.out.println(name);
+            }
+           // System.out.println(Arrays.toString(each));
+        }
+
+        /*
+        [Irene, Aslan, Nazar]
+        [Ahmet, Erfan, Roza, Sarah]
+        [Nurmamet]
+        [Zeki]
+
+
+         */
+
+        System.out.println("=======================================");
+
+        int[][] scores={ {10,20,30},  {60,55,75,105},  {93,48,125,135,13}  };
+//       print out the numbers that ara divisible by 3 or 5
+
+        for(int[] each1DArray :scores){
+
+            for(int eachelement:each1DArray ){
+                if(eachelement%3==0 || eachelement%5==0)
+                System.out.print(eachelement+" ");
+            }
+        }
+
+        System.out.println("=========================================");
+
+        int[][] a1={ {1,2}, {3,4,5} };
+        int[][] a2={ {6,7}, {8,9,10} };
+
+        int[][][] arr3D={ {{1,2}}, {{3,4,5}}  ,{{6,7}}, {{8,9,10}}};
+//                                 0               1
+
+    }
+}
