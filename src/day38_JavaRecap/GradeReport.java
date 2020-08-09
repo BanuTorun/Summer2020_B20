@@ -43,6 +43,14 @@ public class GradeReport {
         gradeF.removeAll(gradeD);
         */
         System.out.println("Grade F: "+gradeF);
+        System.out.println("================================================");
+        System.out.println(gradeA.size()+"students madeA");
+        System.out.println(gradeB.size()+"students madeA");
+        System.out.println(gradeA.size()+"students madeA");
+        System.out.println(gradeA.size()+"students madeA");
+        System.out.println(gradeA.size()+"students madeA");
+
+
 
 
     }
